@@ -1,0 +1,346 @@
+@import url(https://fonts.bunny.net/css?family=alegreya:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|alfa-slab-one:400);
+
+.default-serif {
+  font-family: "Alegreya", serif;
+}
+
+.default-display {
+  font-family: "Alfa Slab One", display;
+}
+:root {
+  --blue-50: #f0f0ff;
+  --blue-100: #e5e4ff;
+  --blue-200: #cecdff;
+  --blue-300: #aca6ff;
+  --blue-400: #8373ff;
+  --blue-500: #5c3bff;
+  --blue-600: #4a13ff;
+  --blue-700: #3a02ff;
+  --blue-800: #3301e6;
+  --blue-900: #2903af;
+  --blue-950: #150077;
+
+  --green-50: #e7ffe4;
+  --green-100: #c9ffc5;
+  --green-200: #96ff92;
+  --green-300: #55ff53;
+  --green-400: #20fb24;
+  --green-500: #00e608;
+  --green-600: #00b50c;
+  --green-700: #02890b;
+  --green-800: #086c10;
+  --green-900: #0c5b13;
+  --green-950: #003307;
+
+  --clementine-50: #fff9ec;
+  --clementine-100: #fff2d3;
+  --clementine-200: #ffe1a5;
+  --clementine-300: #ffcb6d;
+  --clementine-400: #ffa832;
+  --clementine-500: #ff8d0a;
+  --clementine-600: #e66900;
+  --clementine-700: #cc5402;
+  --clementine-800: #a1410b;
+  --clementine-900: #82370c;
+  --clementine-950: #461a04;
+
+  --potters-clay-50: #f9f5ed;
+  --potters-clay-100: #f0e6d1;
+  --potters-clay-200: #e2cea6;
+  --potters-clay-300: #d2ad72;
+  --potters-clay-400: #c3904c;
+  --potters-clay-500: #b47d3e;
+  --potters-clay-600: #915c30;
+  --potters-clay-700: #7c492c;
+  --potters-clay-800: #693d2a;
+  --potters-clay-900: #5a3529;
+  --potters-clay-950: #341b14;
+
+  --jacarta-50: #f1f1fc;
+  --jacarta-100: #e5e6fa;
+  --jacarta-200: #cfd0f6;
+  --jacarta-300: #b3b2ef;
+  --jacarta-400: #9b93e6;
+  --jacarta-500: #8878dc;
+  --jacarta-600: #785ecd;
+  --jacarta-700: #674eb4;
+  --jacarta-800: #554192;
+  --jacarta-900: #3e3366;
+  --jacarta-950: #2a2244;
+
+  --killarney-50: #f3faf3;
+  --killarney-100: #e5f3e5;
+  --killarney-200: #cbe7cc;
+  --killarney-300: #a2d3a4;
+  --killarney-400: #72b674;
+  --killarney-500: #4e9951;
+  --killarney-600: #3c7d3e;
+  --killarney-700: #336635;
+  --killarney-800: #2b502d;
+  --killarney-900: #254226;
+  --killarney-950: #102312;
+
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: var(--blue-700);
+  --primary-foreground: 210 40% 98%;
+  --secondary: var(--clementine-500);
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 1rem;
+
+  --hero-height: calc(100vh - 64px);
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  background-image: linear-gradient(45deg, #102312c2, #2a2244c2, #150077c2);
+}
+.overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #102312e3, #2a2244e3, #150077e3);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0px 5px 10px 0px #0000005e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--blue-50);
+  padding: 20px;
+  align-items: center;
+}
+.navbar a {
+  font-size: 1.55rem;
+  height: 35px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: black;
+  transition: all 300ms;
+}
+
+.nav-links a::before {
+  content: " ";
+  width: 100%;
+  border-bottom: 3px var(--primary) solid;
+}
+
+.nav-links a:hover {
+  color: var(--blue-600);
+}
+
+.hero {
+  background-color: #f0f0f0;
+
+  text-align: center;
+
+  height: var(--hero-height);
+}
+
+.about,
+.services {
+  padding: 40px 20px;
+  max-width: 767px;
+  margin-inline: auto;
+  text-align: left;
+  & p {
+    text-align: justify;
+  }
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  background-color: #e7e7e7;
+
+  padding: 10px;
+  /* text-align: center; */
+  border-radius: 5px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+  padding: 24px;
+}
+
+.services li:hover {
+  box-shadow: 0px 5px 10px 0px #0000005e;
+  background-color: #f8f8f8;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.form {
+  box-shadow: 0px 5px 10px 0px #0000005e;
+  border: 1px solid #eee;
+  background: #eee;
+  display: grid;
+  width: 400px;
+  padding: 1.5rem;
+  border-radius: 5px;
+  gap: 6px;
+}
+
+.form-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100dvh;
+}
+
+.form-input {
+  display: grid;
+  margin-bottom: 15px;
+}
+
+.form-button {
+  all: unset;
+  font-weight: 700;
+  background: #007bff;
+  color: white;
+  text-align: center;
+  /* padding: 10px 0px 10px 0px; */
+  padding: 10px 0px;
+
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+
+.form-button:hover {
+  background: #4ba2ff;
+}
+
+.form-input input {
+  all: unset;
+  height: 40px;
+  font-size: 28px;
+  background-color: white;
+  padding: 0 10px 0 10px;
+  border-radius: 6px;
+}
+
+.form-input label {
+  margin-bottom: 10px;
+}
+
+.hero-image-wrapper {
+  width: 100dvw;
+  height: var(--hero-height);
+}
+.hero-image-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 5px 10px 0px #0000005e;
+}
+
+.image-wrapper {
+  width: 100%;
+}
+.image-wrapper img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 5px 10px 0px #0000005e;
+}
+
+.hero-text {
+  text-align: left;
+  padding: 0 10px;
+  text-wrap: pretty;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & h1 {
+    font-size: 4rem;
+    color: var(--blue-50);
+  }
+
+  & p {
+    font-size: 20px;
+    color: var(--blue-200);
+  }
+}
+
+.services-list {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/*  */
+
+.card {
+  text-align: ;
+
+  & h2 {
+    font-size: 20px;
+  }
+  & p {
+    font-size: 16px;
+    color: rgb(77, 77, 77);
+  }
+}
+.our-services {
+  font-size: 42px;
+  text-align: center;
+}
+
+.logo-wrapper {
+  width: fit-content;
+}
+
+.logo {
+  width: 100%;
+}
+
+.container {
+  max-width: 767px;
+  margin-inline: auto;
+}

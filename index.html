@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Research Firm</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body class="default-serif">
+    <header>
+      <nav class="navbar">
+        <a
+          class="logo-wrapper"
+          style="
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+          "
+          href="/"
+        >
+          <!-- <img class="logo" src="./assets/images/Untitled-1.png" /> -->
+          <span>Vyapar</span>
+          <span>Anusandhan</span>
+          <span>Insights.com</span>
+        </a>
+        <div class="nav-links">
+          <a href="./about-us.html">About</a>
+          <a href="./Services.html">Services</a>
+          <a href="./contact-us.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <section class="hero" style="position: relative">
+      <div class="hero-images">
+        <div class="swiper heroSwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero-image-wrapper">
+                <img
+                  src="./assets/images/hero-images/hero (1).jpg"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-image-wrapper">
+                <img
+                  src="./assets/images/hero-images/hero (2).jpg"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-image-wrapper">
+                <img
+                  src="./assets/images/hero-images/hero (3).jpg"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-image-wrapper">
+                <img
+                  src="./assets/images/hero-images/hero (4).jpg"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-image-wrapper">
+                <img
+                  src="./assets/images/hero-images/hero (5).jpg"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-image-wrapper">
+                <img
+                  src="./assets/images/hero-images/hero (6).jpg"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-image-wrapper">
+                <img
+                  src="./assets/images/hero-images/hero (7).jpg"
+                  alt="Hero Image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="hero-text"
+        style="position: absolute; top: 0; right: 0; bottom: 0; left: 0"
+      >
+        <div class="overlay"></div>
+        <div style="z-index: 1; text-align: c">
+          <h1>Welcome to Our Market Research Firm</h1>
+          <p data-ja-iccha-tai-likhte-pari>
+            Providing insightful data analysis and market understanding to drive
+            your business forward.
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="container"></main>
+    <footer>
+      <p>Contact Us: 9732989328</p>
+      <p>© aishwarya.pal@stu.adamasuniversity.ac.in</p>
+    </footer>
+
+    <script>
+      var swiper = new Swiper(".heroSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
