@@ -107,20 +107,38 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Alegreya, Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  line-height: 1.75rem;
+  font-size: 1rem;
+  color: #131313;
+  max-width: 80ch;
+  margin: 0 auto;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+h1 {
+  line-height: 1;
 }
 
 .hero {
-  background-image: linear-gradient(45deg, #102312c2, #2a2244c2, #150077c2);
+  background-image: linear-gradient(45deg, #1023127d, #2a22447d, #1500777d);
 }
 .overlay {
   z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, #102312e3, #2a2244e3, #150077e3);
+  background-image: linear-gradient(
+    45deg,
+    rgb(16 35 18 / 75%),
+    rgb(42 34 68 / 75%),
+    rgb(21 0 119 / 75%)
+  );
 }
-
 header {
   position: sticky;
   top: 0;
@@ -136,7 +154,9 @@ header {
   align-items: center;
 }
 .navbar a {
-  font-size: 1.55rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
   height: 35px;
   font-weight: 700;
   text-decoration: none;
@@ -146,7 +166,7 @@ header {
   gap: 20px;
 }
 .nav-links a {
-  color: black;
+  color: #606060;
   transition: all 300ms;
 }
 
@@ -171,7 +191,7 @@ header {
 .about,
 .services {
   padding: 40px 20px;
-  max-width: 767px;
+  max-width: 800px;
   margin-inline: auto;
   text-align: left;
   & p {
@@ -206,9 +226,13 @@ h2 {
 
 footer {
   background-color: #333;
-  color: white;
+  color: #f8f8f8;
   text-align: center;
   padding: 20px 0;
+
+  & p {
+    color: #f8f8f8;
+  }
 }
 
 .form {
@@ -320,16 +344,20 @@ footer {
   text-align: ;
 
   & h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   & p {
     font-size: 16px;
     color: rgb(77, 77, 77);
   }
+  & a {
+    text-decoration: none;
+  }
 }
 .our-services {
   font-size: 42px;
   text-align: center;
+  color: rgb(80, 80, 80);
 }
 
 .logo-wrapper {
@@ -343,4 +371,42 @@ footer {
 .container {
   max-width: 767px;
   margin-inline: auto;
+}
+
+.header-search {
+  display: flex;
+  position: relative;
+
+  & input {
+    all: unset;
+    background: #e7e7e7;
+    padding: 10px 0 10px 40px;
+    padding-block: 10px;
+    border-radius: 15px;
+  }
+}
+
+.svg-wrapper {
+  display: flex;
+
+  & svg {
+    height: 60%;
+    margin-block: auto;
+    font-size: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    transform: translatey(-50%);
+  }
+}
+
+.services-home {
+  padding: 100px 0;
+}
+
+.services {
+  & .image-wrapper {
+    margin-bottom: 60px;
+  }
 }
